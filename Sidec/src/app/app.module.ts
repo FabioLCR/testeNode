@@ -5,11 +5,13 @@ import { KeycloakService, KeycloakAngularModule } from 'keycloak-angular';
 import { initializer } from './app-init';
 import { RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
+import { SidecHeaderComponent } from './sidec-header/sidec-header.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    SidecHeaderComponent
   ],
   imports: [
     RouterModule.forRoot([
