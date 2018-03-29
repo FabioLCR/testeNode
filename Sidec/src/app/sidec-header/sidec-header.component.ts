@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { KeycloakService } from 'keycloak-angular';
 
 @Component({
   selector: 'app-sidec-header',
@@ -7,7 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SidecHeaderComponent implements OnInit {
 
-  constructor() { }
+  constructor(private kc: KeycloakService) { }
+
+  logout() {
+    this.kc.logout();
+  }
 
   ngOnInit() {
   }

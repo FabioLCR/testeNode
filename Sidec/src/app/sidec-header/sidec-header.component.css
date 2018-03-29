@@ -68,5 +68,6 @@ h1 {
 }
 
 #navbarSIDEC>.navbar-nav>.nav-item{
-    margin-left: 40px;
+    margin-left: 15px;
+    cursor: pointer;
 }
